@@ -15,7 +15,7 @@ install: ## Install all Go dependencies.
 
 .PHONY: test
 test: ## Run all tests.
-	go test -race -coverprofile=coverage.out ./...
+	go test -race -coverprofile=coverage.out -covermode=atomic ./...
 
 .PHONY: cover
 cover: ## Show coverage from coverage.out
